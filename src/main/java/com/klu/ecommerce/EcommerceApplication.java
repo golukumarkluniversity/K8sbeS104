@@ -1,4 +1,4 @@
-package com.klu.ecommerce;
+package com.example.k8sbeS104;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,14 +6,14 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class EcommerceApplication extends SpringBootServletInitializer {
-
-    public static void main(String[] args) {
-        SpringApplication.run(EcommerceApplication.class, args);
-    }
+public class K8sbeS104Application extends SpringBootServletInitializer {
 
     @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(EcommerceApplication.class);
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(K8sbeS104Application.class);
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(K8sbeS104Application.class, args);
     }
 }
